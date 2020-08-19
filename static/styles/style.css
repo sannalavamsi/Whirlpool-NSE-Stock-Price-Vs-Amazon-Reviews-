@@ -1,0 +1,10 @@
+body {
+	background-color: #EEE;
+}
+
+.header {
+	background-color: #66CCFF;
+	color: white;
+}
+
+#chromeFix { display: block; position: absolute; width: 1px; height: 100%; top: 0px; left: 0px; }

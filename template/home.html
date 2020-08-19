@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/style.css') }}">
+	<style>
+		body{
+			background-color: #778899;
+		}
+		.header{
+			background-color: #696969;
+			padding: 8px;
+			
+			margin: 40px;
+			color: white;
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+		}
+		.compare1{
+			background-color: #D3D3D3;
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+			margin: 40px;
+			
+		}
+
+		.innerbox{
+			
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+			padding: 0px;
+			margin: 40px
+			background-color: #A9A9A9;
+
+		}
+		.compare12{
+			background-color: #D3D3D3;
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+			margin: 40px;
+			
+		}
+
+		.innerbox12{
+			
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+			padding: 0px;
+			margin: 40px
+			background-color: #A9A9A9;
+
+		}
+		.compare2{
+			background-color: #D3D3D3;
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+			margin: 40px;
+			
+		}
+
+		.innerbox2{
+			
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+			padding: 0px;
+			margin: 40px
+			background-color: #A9A9A9;
+
+		}
+		.compare22{
+			background-color: #D3D3D3;
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+			margin: 40px;
+			
+		}
+
+		.innerbox22{
+			
+			box-shadow: inset 0 5px 60px 0 rgba(0, 0, 0, .5);
+			padding: 0px;
+			margin: 40px
+			background-color: #A9A9A9;
+
+		}			
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1><center>WHIRLPOOL - WASHING MACHINE</center></h1>
+	</div>
+	<div class="compare1">
+		<center>
+			<div class="innerbox">
+				<h2><p><b><i>Monthly NSE Stock Price vs Amazon Reviews Polarity Score</i></b></p></h2>
+			</div>
+			<image src="{{ url_for('static',filename='images/stock_vs_polarity.png' )}}" height="540px" width="1100px">
+			<h3 style="background-color: #A9A9A9;">
+				<p>Graph of Monthly NSE Stock Price vs Amazon Reviews Polarity Score. As the NSE stock Price changes the Polarity score of Reviews is also changing but in the month of April the change is opposite because the number of Amazon reviews were less then 5 and the Average polarity score of the reviews were high.</p>
+			</h3>			
+		</center>
+	</div>
+	<div class="compare12">
+		<center>
+			<div class="innerbox12">
+				<h2><p><b><i>NSE Stock Price</i></b></p></h2>
+			</div>
+			<image src="{{ url_for('static',filename='images/stock_price.png' )}}" height="540px" width="1100px">
+			<h3 style="background-color: #A9A9A9;">
+				<p>Graph of Daily Whirlpool NSE Stock Price,as seen in the plot April month was having the less Stock Price, because of the COVID-19 lockdown issues.</p>
+			</h3>			
+		</center>
+	</div>
+
+	<div class="compare2">
+		<center>
+			<div class="innerbox2">
+				<h2><p><b><i>Monthly NSE Trade Qty vs Amazon Reviews Polarity Score</i></b></p></h2>
+			</div>
+			<image src="{{ url_for('static',filename='images/Trade_vs_polarity.png' )}}" height="540px" width="1100px">
+			<h3 style="background-color: #A9A9A9;">
+				<p>Graph of Monthly NSE Trade Qty vs Amazon Reviews Polarity Score.</p>
+			</h3>			
+		</center>
+	</div>	
+	<div class="compare22">
+		<center>
+			<div class="innerbox22">
+				<h2><p><b><i>NSE Trade Qty vs Delivery Qty</i></b></p></h2>
+			</div>
+			<image src="{{ url_for('static',filename='images/Trade_vs_Delivery.png' )}}" height="540px" width="1100px">
+			<h3 style="background-color: #A9A9A9;">
+				<p>Graph of Daily Whirlpool NSE Trade Qty vs Delivariable Qty, as seen in the plot April month was having the less Trade Qty, because of the COVID-19 lockdown issues.</p>
+			</h3>			
+		</center>
+	</div>
+</body>
+<span id="chromeFix"></span>
+</html>
